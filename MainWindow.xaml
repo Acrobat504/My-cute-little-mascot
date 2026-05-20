@@ -1,0 +1,33 @@
+﻿<!-- 핵심 설정 3개: AllowsTransparency, Background, WindowStyle -->
+<Window x:Class="MascotApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mascot"
+        Width="300" Height="300"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStyle="None"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com">
+
+    <Grid>
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="설정" Click="OnContextSettings"/>
+                <Separator/>
+                <MenuItem Header="종료" Click="OnContextExit"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+        <!-- 캐릭터 이미지 -->
+        <Image x:Name="CharacterImage"
+               Width="250" Height="250"
+               VerticalAlignment="Bottom"
+               HorizontalAlignment="Center"
+               gif:ImageBehavior.AnimatedSource="Assets/idle.gif"
+               RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+        
+    </Grid>
+    
+</Window>

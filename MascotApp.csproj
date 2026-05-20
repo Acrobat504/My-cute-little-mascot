@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+	  <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<Resource Include="Assets\idle.gif" />
+		<Resource Include="Assets\walk.gif" />
+		<Resource Include="Assets\pet.gif" />
+		<Resource Include="Assets\drag.gif" />
+		<Resource Include="Assets\tray.ico"/>
+		<Resource Include="Assets\heart.png"/>
+	</ItemGroup>
+</Project>
